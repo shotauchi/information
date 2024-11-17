@@ -17,4 +17,9 @@ class Profile extends Model
         'introduction' => 'required',
         
         );
+        
+        public function keeps()
+    {
+        return $this->hasMany('App\Models\Keep');
+    }
 }
